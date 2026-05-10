@@ -1,7 +1,7 @@
 // index.ts
 import { diag, DiagConsoleLogger, DiagLogLevel } from "@opentelemetry/api"
 import { Effect, Logger, LogLevel } from "effect"
-import { TelemetryLive } from "../telemetry.ts"
+import { TelemetryLive } from "./telemetry"
 
 // 1. OTel SDK internal errors (trace + metric exporter failures)
 diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.ERROR)
